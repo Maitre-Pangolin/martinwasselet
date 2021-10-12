@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#defaultCanvas0 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+#ponto {
+  width: 300px;
+}
+
+header {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+#name {
+  font-weight: 900;
+}
+
+#surname {
+  font-weight: 300;
+}
