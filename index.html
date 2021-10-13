@@ -17,30 +17,21 @@
   <body>
     <header></header>
     <div id="fullpage">
-      <div class="section">
+      <div class="section" id="section1">
         Some section
+        <canvas id="sketch1"></canvas>
         <h1 id="name">M A R T I N</h1>
         <h1 id="surname">W A S S E L E T</h1>
         <h1>Full-Stack Developer</h1>
         <h1>M/P ERN Stack</h1>
       </div>
-      <div class="section">Some section</div>
+      <div class="section" id="section2">
+        <a href="https://www.etsy.com/ca/listing/855396171/sticker-vinyl-ponto-kawaii-traffic-cone?ref=shop_home_active_13"
+          ><img src="./img/ponto_ruebarree.png" alt="Ponto En Construction" id="ponto"
+        /></a>
+      </div>
       <div class="section">Some section</div>
       <div class="section">Some section</div>
     </div>
-
-    <a href="https://www.etsy.com/ca/listing/855396171/sticker-vinyl-ponto-kawaii-traffic-cone?ref=shop_home_active_13"
-      ><img src="./img/ponto_ruebarree.png" alt="Ponto En Construction" id="ponto"
-    /></a>
   </body>
-  <script>
-    new fullpage("#fullpage", {
-      //options here
-      autoScrolling: true,
-      scrollHorizontally: true,
-    });
-
-    //methods
-    fullpage_api.setAllowScrolling(false);
-  </script>
 </html>

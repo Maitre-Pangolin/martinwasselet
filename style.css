@@ -1,10 +1,19 @@
 body {
   margin: 0;
-  overflow-x: hidden;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 #defaultCanvas0 {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   z-index: -1;
@@ -28,4 +37,8 @@ header {
 
 #surname {
   font-weight: 300;
+}
+
+#section1 {
+  height: 100vh;
 }
