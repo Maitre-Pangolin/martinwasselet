@@ -6,24 +6,23 @@
   scroll-behavior: smooth;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
-html::-webkit-scrollbar {
+*::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-html {
+* {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
 
-#fullpage {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
+header {
+  position: fixed;
 }
 
-.section {
-  scroll-snap-align: start;
+#fullpage {
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 canvas {
@@ -45,11 +44,9 @@ h1 {
 
 #name {
   font-weight: 800;
-  padding: 0.5rem 0;
 }
 #surname {
   font-weight: 300;
-  padding: 0.5 0rem;
 }
 
 #role {
@@ -60,72 +57,142 @@ h1 {
   margin-left: 0.5rem;
 }
 
-#ponto {
-  width: 300px;
-}
-
-#section1 {
+#home {
   height: 100vh;
   padding-top: 5rem;
   box-sizing: border-box;
 }
 
 #info-section {
-  background-color: white;
-  height: 100vh;
-  padding-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.651);
+  padding: 5rem 0;
 }
 
-#contact-section {
-  background-color: rgb(100, 237, 173);
-  height: 100vh;
-}
-
-footer {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  font-size: 2rem;
-}
-
-footer li {
-  list-style-type: none;
-  margin: 1rem;
-}
-
-#presentation {
-  font-family: "Lato";
-  width: 40%;
+.stripe {
   background-color: #4374cf;
-  color: white;
-  padding: 1rem 2rem;
+  color: rgb(241, 230, 252);
+  padding: 4rem 0 8rem 0;
   line-height: 2rem;
   margin: auto;
   box-shadow: 1rem 1rem rgba(204, 153, 255, 0.575);
   text-align: center;
 }
 
-#presentation p {
+.stripe h2 {
+  font-size: 2rem;
+}
+
+.stripe p {
+  margin: 1rem auto;
   font-weight: 500;
   font-size: larger;
+  width: 40%;
 }
 
-#skills {
-  margin-top: 4rem;
-}
-
-#skills h2 {
-  font-family: "Lato";
-  text-align: center;
-  font-size: 4rem;
-}
-
-.skills-wrapper img {
-  width: 10%;
-}
-
-.skills-wrapper {
+.flex-container {
   display: flex;
-  width: 80%;
-  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  transform: translateY(-6rem);
+}
+
+#skill {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 0px rgba(204, 153, 255, 0.384);
+  justify-content: space-around;
+}
+
+.skills {
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+#frontend {
+  border-right: rgba(204, 153, 255, 0.356) 1px solid;
+}
+
+#tools {
+  border-left: rgba(204, 153, 255, 0.356) 1px solid;
+}
+
+.head-icon {
+  font-size: 4rem;
+  padding: 2rem;
+  color: #4374cf;
+}
+
+.skills h2 {
+  padding: 2rem 0;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Roboto Mono";
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+}
+.icon-wrapper i {
+  font-size: 5rem;
+  padding: 2rem;
+  color: rgba(0, 0, 0, 0.658);
+  transition: color 0.3s ease-in-out 0.3s;
+}
+
+.icon-wrapper {
+  position: relative;
+}
+
+.icon-wrapper p {
+  color: transparent;
+  position: relative;
+  bottom: 4rem;
+  font-size: 2rem;
+  font-weight: 800;
+  transition: color 0.3s ease-in-out;
+}
+
+.skills:hover .icon-container i {
+  color: transparent;
+  transition: color 0.3s ease-in-out;
+}
+
+.skills:hover p {
+  color: #4374cf;
+  transition: color 0.3s ease-in-out 0.3s;
+}
+
+aside {
+  position: fixed;
+  right: 0;
+  bottom: 10rem;
+  font-size: 2.5rem;
+}
+
+aside li {
+  list-style-type: none;
+  margin: 1rem;
+}
+
+aside li:hover {
+  transition: ease-in 0.2s;
+  transform: rotateZ(-20deg);
+}
+
+aside a:hover {
+  transition: ease-in 0.2s;
+  color: #4374cf;
+}
+
+aside a {
+  color: black;
+}
+
+footer {
+  padding: 2rem;
+  background-color: #4374cfc5;
+  color: rgb(241, 230, 252);
+  text-align: center;
 }
