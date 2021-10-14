@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" type="text/css" href="fullpage.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/352a830a36.js" crossorigin="anonymous"></script>
     <title>Martin Wasselet</title>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
     <script type="text/javascript" src="fullpage.js"></script>
@@ -15,23 +16,59 @@
   </head>
 
   <body>
-    <header></header>
+    <header><a href="#info-section">info</a></header>
     <div id="fullpage">
       <div class="section" id="section1">
-        Some section
         <canvas id="sketch1"></canvas>
-        <h1 id="name">M A R T I N</h1>
-        <h1 id="surname">W A S S E L E T</h1>
-        <h1>Full-Stack Developer</h1>
-        <h1>M/P ERN Stack</h1>
+        <h1><span id="name">M A R T I N</span> <span id="surname">W A S S E L E T</span><span id="role">FULL-STACK DEVELOPER</span></h1>
       </div>
-      <div class="section" id="section2">
-        <a href="https://www.etsy.com/ca/listing/855396171/sticker-vinyl-ponto-kawaii-traffic-cone?ref=shop_home_active_13"
-          ><img src="./img/ponto_ruebarree.png" alt="Ponto En Construction" id="ponto"
-        /></a>
+      <div class="section" id="info-section">
+        <div id="presentation">
+          <h2>Hi there I'm Martin. Nice to meet you.</h2>
+          <p>
+            I'm a Montreal based, Javascript Full-Stack Developer and Numerical Artist. I spent the year 2021 learning all about web development and improving
+            my coding skills and my general knowledge of algorithm and design patterns. I now possess the skills to build web-app from the ground up using Node,
+            React and MongoDB or PostGreSQL. I'm an ever-curious person, always eager to learn and perfect his skills. I'm looking for a first job opportunity
+            starting in January 2022, working on personnal project in the meantime.
+          </p>
+        </div>
+        <div id="skills">
+          <h2>Skills & Tools</h2>
+          <div class="skills-wrapper">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" />
+          </div>
+        </div>
       </div>
-      <div class="section">Some section</div>
-      <div class="section">Some section</div>
     </div>
+    <footer>
+      <ul>
+        <li><i class="far fa-envelope"></i></li>
+        <li><i class="fab fa-github"></i></li>
+        <li><i class="fab fa-linkedin"></i></li>
+        <li><i class="fab fa-npm"></i></li>
+      </ul>
+    </footer>
   </body>
 </html>
