@@ -444,4 +444,29 @@ footer {
   .flex-container {
     width: 90%;
   }
+
+  #artwork-presentation h2 {
+    font-size: 1rem;
+  }
+
+  #controls {
+    flex-direction: column;
+  }
+
+  input {
+    margin-bottom: 1rem;
+  }
+
+  #artwork {
+    width: 100%;
+    padding: 2rem;
+  }
+  #fullpage {
+    scroll-snap-type: none;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 2rem 1rem;
+  }
 }
