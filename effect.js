@@ -16,8 +16,5 @@ const scrollControl = (scrollTop) => {
   if (scrollTop < window.innerHeight && scrollTop > lastScrollTop) {
     section.scrollIntoView();
   }
-  if (scrollTop > 3.7 * window.innerHeight && scrollTop < 4.5 * window.innerHeight && scrollTop > lastScrollTop) {
-    artwork.scrollIntoView();
-  }
   lastScrollTop = scrollTop;
 };

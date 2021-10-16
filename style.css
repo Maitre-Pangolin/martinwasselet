@@ -105,7 +105,7 @@ h1 {
   margin: 1rem auto;
   font-weight: 500;
   font-size: 1.3rem;
-  width: 40%;
+  width: 50%;
 }
 
 .flex-container {
@@ -340,4 +340,108 @@ footer {
   background-color: #4374cfc5;
   color: rgb(241, 230, 252);
   text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .flex-container {
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+  }
+  .stripe p {
+    width: 80%;
+  }
+
+  .icon-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #backend,
+  #tools {
+    border-top: rgba(204, 153, 255, 0.356) 1px solid;
+  }
+
+  .project {
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  #projet1 {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: rgba(204, 153, 255, 0.356) 1px solid;
+  }
+  #projet3 {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: rgba(204, 153, 255, 0.356) 1px solid;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  h1 {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+
+  #role {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  nav,
+  aside {
+    visibility: hidden;
+  }
+
+  .stripe h2 {
+    font-size: 1.2rem;
+  }
+
+  .stripe p {
+    font-size: 0.9rem;
+    text-align: center;
+    width: 90%;
+  }
+
+  .icon-wrapper {
+    width: 50%;
+  }
+
+  .icon-wrapper i {
+    font-size: 4rem;
+    padding: 0.5rem;
+  }
+
+  .icon-wrapper p {
+    font-size: 1rem;
+  }
+
+  .project .description {
+    font-size: 1rem;
+  }
+
+  .project a p {
+    width: 150px;
+    font-size: 1rem;
+  }
+
+  .project i {
+    background-color: white;
+    color: #4374cf;
+    font-size: 1.5rem;
+  }
+
+  #contact a {
+    font-size: 0.9rem;
+  }
+
+  .flex-container {
+    width: 90%;
+  }
 }
