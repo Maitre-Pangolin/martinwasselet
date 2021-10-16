@@ -1,20 +1,29 @@
+// Made by Martin Wasselet 2021/10/15
+
 let particles = [[], [], []];
 let nums = 500;
 let noiseScale = 2000;
+let scale = 10;
 let timer = 0;
-let button;
+let sliderNoise, sliderScale;
 
 //
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   sketchReset();
-  button = createButton("click me");
-  const parent = document.querySelector("#artwork");
-  button.parent(parent);
+  sliderNoise = createSlider(2, 4, 3.3, 0);
+  sliderScale = createSlider(0, 4, 1, 0);
+  const parent = document.querySelector("#controls");
+  sliderNoise.parent(parent);
+  sliderScale.parent(parent);
+  sliderNoise.input(sketchReset);
+  sliderScale.input(sketchReset);
 }
 
 function draw() {
+  noiseScale = pow(10, sliderNoise.value());
+  scale = pow(10, sliderScale.value());
   noStroke();
   smooth();
   for (var i = 0; i < 3; i++) {
@@ -56,7 +65,7 @@ class Particle {
   }
 
   move() {
-    let angle = noise(this.pos.x / noiseScale, this.pos.y / noiseScale) * TWO_PI * 10;
+    let angle = noise(this.pos.x / noiseScale, this.pos.y / noiseScale) * TWO_PI * scale;
     this.dir.x = cos(angle);
     this.dir.y = sin(angle);
     this.vel = this.dir.copy();

@@ -11,8 +11,9 @@
     <script src="https://kit.fontawesome.com/352a830a36.js" crossorigin="anonymous"></script>
     <title>Martin Wasselet</title>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
-    <script type="text/javascript" src="fullpage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
     <script type="text/javascript" src="sketch.js" defer></script>
+    <script type="text/javascript" src="effect.js" defer></script>
   </head>
 
   <body>
@@ -123,37 +124,44 @@
         </div>
         <div class="flex-container" id="projects">
           <div class="project">
-            <h3>PROJECT</h3>
-            <p class="description">Description desc descript descr descri description desc descript descr descri</p>
+            <h3>MERN App</h3>
+            <p class="description">
+              First MERN application, learned how to use Redux in React and how to set-up a proper architecture on the front end back end side.
+            </p>
             <a href="https://github.com/Maitre-Pangolin" target="_blank"
               ><i class="fas fa-code-branch"></i>
               <p>Repository</p></a
             >
-            <a href="https://github.com/Maitre-Pangolin" target="_blank"
-              ><i class="fas fa-code"></i>
+            <a href="https://github.com/Maitre-Pangolin/My-first-MERN-app" target="_blank"
+              ><i class="fas fa-tools head-icon"></i>
+              <p>Ongoing</p>
+            </a>
+          </div>
+          <div class="project">
+            <h3>Github Codemates</h3>
+            <p class="description">
+              A React application built on top of a small Express and Node API. Uses Github API to find all the users who subscribed to Github the same day as
+              the user.
+            </p>
+            <a href="https://github.com/Maitre-Pangolin/github-codemates" target="_blank"
+              ><i class="fas fa-code-branch"></i>
+              <p>Repository</p></a
+            >
+            <a href="https://maitre-pangolin.github.io/github-codemates/#/" target="_blank"
+              ><i class="fas fa-tools head-icon"></i>
               <p>Deployement</p>
             </a>
           </div>
           <div class="project">
-            <h3>PROJECT</h3>
-            <p class="description">Description desc descript descr descri description desc descript descr descri</p>
-            <a href="https://github.com/Maitre-Pangolin" target="_blank"
+            <h3>Username Generator</h3>
+            <p class="description">
+              Npm package to generate random username. Browser, Node.js and CLI supported. Learned to use webpack and to release a package via CDN.
+            </p>
+            <a href="https://github.com/Maitre-Pangolin/mw-username-generator" target="_blank"
               ><i class="fas fa-code-branch"></i>
               <p>Repository</p></a
             >
-            <a href="https://github.com/Maitre-Pangolin" target="_blank"
-              ><i class="fas fa-code"></i>
-              <p>Deployement</p>
-            </a>
-          </div>
-          <div class="project">
-            <h3>PROJECT</h3>
-            <p class="description">Description desc descript descr descri description desc descript descr descri</p>
-            <a href="https://github.com/Maitre-Pangolin" target="_blank"
-              ><i class="fas fa-code-branch"></i>
-              <p>Repository</p></a
-            >
-            <a href="https://github.com/Maitre-Pangolin" target="_blank"
+            <a href=https://www.npmjs.com/package/mw-username-generator target="_blank"
               ><i class="fas fa-code"></i>
               <p>Deployement</p>
             </a>
@@ -170,7 +178,12 @@
           <div><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/croc0smos/" target="_blank">Croc0smos</a></div>
         </div>
       </div>
-      <div id="artwork"></div>
+      <div id="artwork">
+        <div id="artwork-presentation">
+          <h2>Interact with my ArtWork</h2>
+          <div id="controls"></div>
+        </div>
+      </div>
       <footer>
         <p>Made with ❤ and ☕ by me in Montreal. © 2021</p>
       </footer>

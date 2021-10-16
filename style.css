@@ -38,6 +38,7 @@ nav a:hover {
 #fullpage {
   overflow-y: scroll;
   height: 100vh;
+  scroll-snap-type: y proximity;
 }
 
 canvas {
@@ -45,9 +46,6 @@ canvas {
   left: 0;
   top: 0;
   z-index: -1;
-}
-
-button {
 }
 
 h1 {
@@ -73,21 +71,24 @@ h1 {
   letter-spacing: 1rem;
   padding: 1.5rem 0;
   margin-left: 0.5rem;
+  color: #4374cf;
 }
 
 #home {
   height: 100vh;
   padding-top: 5rem;
   box-sizing: border-box;
+  scroll-snap-align: start;
 }
 
 #info-section {
   background-color: rgba(255, 255, 255, 0.651);
-  padding: 5rem 0;
+  padding: 5rem 0 25rem 0;
+  scroll-snap-align: start;
 }
 
 .stripe {
-  background-color: #4374cf;
+  background-color: #4374cfcb;
   color: rgb(255, 255, 255);
   padding: 4rem 0 8rem 0;
   line-height: 2rem;
@@ -285,6 +286,27 @@ h1 {
 
 #artwork {
   height: 100vh;
+  padding: 2rem 4rem;
+  width: 500px;
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+#artwork h2 {
+  color: white;
+  font-size: 1.3rem;
+}
+
+#artwork-presentation {
+  background-color: #4374cfd2;
+  padding: 2rem 2rem;
+  box-shadow: 1rem 1rem rgba(204, 153, 255, 0.575);
+}
+
+#controls {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-around;
 }
 
 aside {
