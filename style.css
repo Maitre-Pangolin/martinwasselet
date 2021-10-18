@@ -470,3 +470,7 @@ footer {
     padding: 2rem 1rem;
   }
 }
+
+#role {
+  letter-spacing: 0.7rem;
+}
