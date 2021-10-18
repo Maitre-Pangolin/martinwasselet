@@ -41,7 +41,7 @@ function draw() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(document.querySelector("#fullpage").offsetWidth, document.querySelector("#fullpage").offsetHeight);
   sketchReset();
 }
 
