@@ -91,7 +91,7 @@ h1 {
   background-color: #4374cfcb;
   color: rgb(255, 255, 255);
   padding: 4rem 0 8rem 0;
-  line-height: 2rem;
+  line-height: 2.5rem;
   margin: auto;
   box-shadow: 1rem 1rem rgba(204, 153, 255, 0.575);
   text-align: center;
@@ -197,13 +197,27 @@ h1 {
 }
 
 .project h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 2rem 0 0 0;
 }
 
 .project .description {
   font-size: 1.3rem;
   padding: 2rem 0;
+  text-align: justify;
+  color: #4374cf;
+}
+
+.project ul {
+  margin-bottom: 2rem;
+}
+
+.project li {
+  list-style-type: none;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-align: left;
+  padding: 0.5rem 0;
 }
 
 .project a {
@@ -424,6 +438,10 @@ footer {
     font-size: 1rem;
   }
 
+  .project li {
+    font-size: 0.9rem;
+  }
+
   .project a p {
     width: 150px;
     font-size: 1rem;
@@ -471,4 +489,30 @@ footer {
 
 #role {
   letter-spacing: 0.7rem;
+}
+
+strong {
+  background-image: linear-gradient(to right, white 0, white 100%);
+  background-position: 0 1.6em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 1s;
+  padding: 5px 0;
+}
+
+strong:hover {
+  background-size: 100% 100%;
+}
+
+.strongactive {
+  background-size: 100% 100%;
+}
+
+.down {
+  font-size: 4rem;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 20px;
+  color: #4374cf;
 }

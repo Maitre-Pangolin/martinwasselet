@@ -3,10 +3,11 @@
   const section = document.querySelector("#info-section");
   const artwork = document.querySelector("#artwork");
   let lastScrollTop = window.scrollY;
+  let underlineWasTriggered = false;
+  const elementsToUnderline = document.querySelectorAll("strong");
+  const downArrow = document.querySelector(".down");
 
-  window.addEventListener("scroll", () => {
-    console.log("scroll");
-  });
+  downArrow.addEventListener("click", () => (downArrow.style.display = "none"));
 
   fullpage.addEventListener(
     "scroll",
@@ -15,7 +16,16 @@
 
   const scrollControl = (scrollTop) => {
     if (scrollTop < window.innerHeight && scrollTop > lastScrollTop) {
+      if (downArrow.style.display !== "none") downArrow.style.display = "none";
       section.scrollIntoView();
+      if (!underlineWasTriggered) {
+        underlineWasTriggered = true;
+        elementsToUnderline.forEach((e, i) => {
+          setTimeout(() => {
+            e.classList.add("strongactive");
+          }, 500 + i * 200);
+        });
+      }
     }
     lastScrollTop = scrollTop;
   };
