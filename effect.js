@@ -1,4 +1,12 @@
 (function () {
+  console.log(
+    `👋 Hi there
+  While you're here, how about visiting my github account : https://github.com/Maitre-Pangolin 
+  Feel free to contact me : martin.wasselet@gmail.com
+  Have a great day ! ✌
+  `
+  );
+
   const fullpage = document.querySelector("#fullpage");
   const section = document.querySelector("#info-section");
   const artwork = document.querySelector("#artwork");
