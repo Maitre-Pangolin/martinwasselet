@@ -500,9 +500,6 @@ strong {
   padding: 5px 0;
 }
 
-strong:hover {
-  background-size: 100% 100%;
-}
 
 .strongactive {
   background-size: 100% 100%;
